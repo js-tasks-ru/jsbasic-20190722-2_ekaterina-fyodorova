@@ -5,9 +5,11 @@
  * @returns {number}
  */
 function pow(m, n) {
-  let x = m;
-  for (let i = 1; i < n; i++) {
-  	x *= m;
+  if (n >= 1) {	
+    let x = m;
+    for (let i = 1; i < n; i++) {
+  	  x *= m;
+   }
+    return x;
   }
-  return x;
 }
